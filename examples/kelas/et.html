@@ -13,268 +13,408 @@
         <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center" aria-label="Global">
           <a class="flex-none text-xl font-semibold dark:text-white" href="../example00-basic.html">NOTSCH</a>
           <div class="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
-            <a class="font-medium text-black-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../kelas/index_admin.html" aria-current="page">CLASS</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../MYNOTE/menote.html">MENOTE</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../profile/indexadmin.html">PROFILE</a>
-            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../contact/index.html">CONTACT</a>
+            <a class="font-medium text-black-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../kelas/class.html" aria-current="page">CLASS</a>
+            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../MYNOTE/menote.html">MYNOTE</a>
+            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../profile/profile.html">PROFILE</a>
+            <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="../contact/contact.html">CONTACT</a>
             <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">LOGOUT</a>
         </div>
           </div>
         </nav>
       </header>
-      
-    <!-- component -->
-<div class="bg-gray-500 h-screen w-screen sm:px-8 md:px-16 sm:py-8">
-    <main class="container mx-auto max-w-screen-lg h-full">
-      <!-- file upload modal -->
-      <article aria-label="File Upload Modal" class="relative h-full flex flex-col bg-white shadow-xl rounded-md" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" ondragleave="dragLeaveHandler(event);" ondragenter="dragEnterHandler(event);">
-        <!-- overlay -->
-        <div id="overlay" class="w-full h-full absolute top-0 left-0 pointer-events-none z-50 flex flex-col items-center justify-center rounded-md">
-          <i>
-            <svg class="fill-current w-12 h-12 mb-3 text-blue-700" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479-1.092l4 4h-3v4h-2v-4h-3l4-4z" />
-            </svg>
-          </i>
-          <p class="text-lg text-blue-700">Drop files to upload</p>
-        </div>
 
-        <!-- scroll area -->
-        <section class="h-full overflow-auto p-8 w-full h-full flex flex-col">
-          <header class="border-dashed border-2 border-gray-400 py-12 flex flex-col justify-center items-center">
-            <p class="mb-3 font-semibold text-gray-900 flex flex-wrap justify-center">
-              <span>Drag and drop your</span>&nbsp;<span>files anywhere or</span>
-            </p>
-            <input id="hidden-input" type="file" multiple class="hidden" />
-            <button id="button" class="mt-2 rounded-sm px-3 py-1 bg-gray-200 hover:bg-gray-300 focus:shadow-outline focus:outline-none">
-              Upload a file
-            </button>
-          </header>
-
-          <h1 class="pt-8 pb-3 font-semibold sm:text-lg text-gray-900">
-            To Upload
-          </h1>
-
-          <ul id="gallery" class="flex flex-1 flex-wrap -m-1">
-            <li id="empty" class="h-full w-full text-center flex flex-col items-center justify-center items-center">
-              <img class="mx-auto w-32" src="https://user-images.githubusercontent.com/507615/54591670-ac0a0180-4a65-11e9-846c-e55ffce0fe7b.png" alt="no data" />
-              <span class="text-small text-gray-500">No files selected</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- sticky footer -->
-        <footer class="flex justify-end px-8 pb-8 pt-4">
-          <button id="submit" class="rounded-sm px-3 py-1 bg-blue-700 hover:bg-blue-500 text-white focus:shadow-outline focus:outline-none">
-            Upload now
-          </button>
-          <button id="cancel" class="ml-3 rounded-sm px-3 py-1 hover:bg-gray-300 focus:shadow-outline focus:outline-none">
-            Cancel
-          </button>
-        </footer>
-      </article>
-    </main>
+      <!-- ====== Page Title Section Start -->
+<section class="dark:bg-dark bg-white py-[10px] text-center">
+  <!-- class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center" -->
+  <div class="mx-auto px-4 sm:container">
+     <div>
+        <h2 class="text-dark mb-2 text-2xl font-semibold dark:text-white">
+           PROFESSIONAL ETHICS
+        </h2>
+        <p class="text-body-color dark:text-dark-6 text-sm font-medium">
+          "Setiap keputusan dalam menjalankan profesi membentuk etika sebagai cermin karakter dan integritas dirimu. Seperti penjaga nilai, pertimbangkan setiap tindakanmu dengan cermat sebagai langkah yang memberikan dampak positif. Dalam setiap interaksi dengan rekan kerja, klien, dan masyarakat, terpancarlah sikap jujur, tanggung jawab, dan hormat. Mari hayati prinsip keadilan, transparansi, dan kerjasama sebagai landasan etika profesi. Selamat menjalani setiap tugas dengan penuh integritas, dan biarkan etika membimbingmu menuju reputasi yang kokoh dan keberlanjutan dalam karirmu."
+        </p>
+     </div>
   </div>
-
-  <!-- using two similar templates for simplicity in js code -->
-  <template id="file-template">
-    <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
-      <article tabindex="0" class="group w-full h-full rounded-md focus:outline-none focus:shadow-outline elative bg-gray-100 cursor-pointer relative shadow-sm">
-        <img alt="upload preview" class="img-preview hidden w-full h-full sticky object-cover rounded-md bg-fixed" />
-
-        <section class="flex flex-col rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
-          <h1 class="flex-1 group-hover:text-blue-800"></h1>
-          <div class="flex">
-            <span class="p-1 text-blue-800">
-              <i>
-                <svg class="fill-current w-4 h-4 ml-auto pt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M15 2v5h5v15h-16v-20h11zm1-2h-14v24h20v-18l-6-6z" />
-                </svg>
-              </i>
-            </span>
-            <p class="p-1 size text-xs text-gray-700"></p>
-            <button class="delete ml-auto focus:outline-none hover:bg-gray-300 p-1 rounded-md text-gray-800">
-              <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
-              </svg>
-            </button>
+</section>
+<!-- ====== Page Title Section End -->
+      
+ <!-- attchments input -->
+ <div>
+  <div class="px-4 py-6 sm:grid ">
+  <dt class="text-sm font-medium leading-6 text-gray-900">Attachments</dt>
+  <dd class="mt-2 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+      <ul role="list" class="divide-y divide-gray-100 rounded-md border border-gray-200">
+      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+          <div class="flex w-0 flex-1 items-center">
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-4 flex min-w-0 flex-1 gap-2">
+              <span class="truncate font-medium">resume_back_end_developer.pdf</span>
+              <span class="flex-shrink-0 text-gray-400">2.4mb</span>
           </div>
-        </section>
-      </article>
-    </li>
-  </template>
-
-  <template id="image-template">
-    <li class="block p-1 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-1/8 h-24">
-      <article tabindex="0" class="group hasImage w-full h-full rounded-md focus:outline-none focus:shadow-outline bg-gray-100 cursor-pointer relative text-transparent hover:text-white shadow-sm">
-        <img alt="upload preview" class="img-preview w-full h-full sticky object-cover rounded-md bg-fixed" />
-
-        <section class="flex flex-col rounded-md text-xs break-words w-full h-full z-20 absolute top-0 py-2 px-3">
-          <h1 class="flex-1"></h1>
-          <div class="flex">
-            <span class="p-1">
-              <i>
-                <svg class="fill-current w-4 h-4 ml-auto pt-" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
-                </svg>
-              </i>
-            </span>
-
-            <p class="p-1 size text-xs"></p>
-            <button class="delete ml-auto focus:outline-none hover:bg-gray-300 p-1 rounded-md">
-              <svg class="pointer-events-none fill-current w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path class="pointer-events-none" d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z" />
-              </svg>
-            </button>
           </div>
-        </section>
-      </article>
-    </li>
-  </template>
+          <div class="ml-4 flex-shrink-0">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+          </div>
+      </li>
+      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+          <div class="flex w-0 flex-1 items-center">
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-4 flex min-w-0 flex-1 gap-2">
+              <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+              <span class="flex-shrink-0 text-gray-400">4.5mb</span>
+          </div>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+          </div>
+      </li>
+      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+          <div class="flex w-0 flex-1 items-center">
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-4 flex min-w-0 flex-1 gap-2">
+              <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+              <span class="flex-shrink-0 text-gray-400">4.5mb</span>
+          </div>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+          </div>
+      </li>
+      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+          <div class="flex w-0 flex-1 items-center">
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-4 flex min-w-0 flex-1 gap-2">
+              <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+              <span class="flex-shrink-0 text-gray-400">4.5mb</span>
+          </div>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+          </div>
+      </li>
+      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6">
+          <div class="flex w-0 flex-1 items-center">
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z" clip-rule="evenodd" />
+          </svg>
+          <div class="ml-4 flex min-w-0 flex-1 gap-2">
+              <span class="truncate font-medium">coverletter_back_end_developer.pdf</span>
+              <span class="flex-shrink-0 text-gray-400">4.5mb</span>
+          </div>
+          </div>
+          <div class="ml-4 flex-shrink-0">
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Download</a>
+          </div>
+      </li>
+      </ul>
+  </dd>
+  </div>
+</dl>
+</div>
+</div>
 
-<script>
-const fileTempl = document.getElementById("file-template"),
-imageTempl = document.getElementById("image-template"),
-empty = document.getElementById("empty");
+<!-- component -->
+<div class="mx-auto container py-20 px-6">
+<!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
 
-// use to store pre selected files
-let FILES = {};
-
-// check if file is of type image and prepend the initialied
-// template to the target element
-function addFile(target, file) {
-const isImage = file.type.match("image.*"),
-  objectURL = URL.createObjectURL(file);
-
-const clone = isImage
-  ? imageTempl.content.cloneNode(true)
-  : fileTempl.content.cloneNode(true);
-
-clone.querySelector("h1").textContent = file.name;
-clone.querySelector("li").id = objectURL;
-clone.querySelector(".delete").dataset.target = objectURL;
-clone.querySelector(".size").textContent =
-  file.size > 1024
-    ? file.size > 1048576
-      ? Math.round(file.size / 1048576) + "mb"
-      : Math.round(file.size / 1024) + "kb"
-    : file.size + "b";
-
-isImage &&
-  Object.assign(clone.querySelector("img"), {
-    src: objectURL,
-    alt: file.name
-  });
-
-empty.classList.add("hidden");
-target.prepend(clone);
-
-FILES[objectURL] = file;
-}
-
-const gallery = document.getElementById("gallery"),
-overlay = document.getElementById("overlay");
-
-// click the hidden input of type file if the visible button is clicked
-// and capture the selected files
-const hidden = document.getElementById("hidden-input");
-document.getElementById("button").onclick = () => hidden.click();
-hidden.onchange = (e) => {
-for (const file of e.target.files) {
-  addFile(gallery, file);
-}
-};
-
-// use to check if a file is being dragged
-const hasFiles = ({ dataTransfer: { types = [] } }) =>
-types.indexOf("Files") > -1;
-
-// use to drag dragenter and dragleave events.
-// this is to know if the outermost parent is dragged over
-// without issues due to drag events on its children
-let counter = 0;
-
-// reset counter and append file to gallery when file is dropped
-function dropHandler(ev) {
-ev.preventDefault();
-for (const file of ev.dataTransfer.files) {
-  addFile(gallery, file);
-  overlay.classList.remove("draggedover");
-  counter = 0;
-}
-}
-
-// only react to actual files being dragged
-function dragEnterHandler(e) {
-e.preventDefault();
-if (!hasFiles(e)) {
-  return;
-}
-++counter && overlay.classList.add("draggedover");
-}
-
-function dragLeaveHandler(e) {
-1 > --counter && overlay.classList.remove("draggedover");
-}
-
-function dragOverHandler(e) {
-if (hasFiles(e)) {
-  e.preventDefault();
-}
-}
-
-// event delegation to caputre delete events
-// fron the waste buckets in the file preview cards
-gallery.onclick = ({ target }) => {
-if (target.classList.contains("delete")) {
-  const ou = target.dataset.target;
-  document.getElementById(ou).remove(ou);
-  gallery.children.length === 1 && empty.classList.remove("hidden");
-  delete FILES[ou];
-}
-};
-
-// print all selected files
-document.getElementById("submit").onclick = () => {
-alert(`Submitted Files:\n${JSON.stringify(FILES)}`);
-console.log(FILES);
-};
-
-// clear entire selection
-document.getElementById("cancel").onclick = () => {
-while (gallery.children.length > 0) {
-  gallery.lastChild.remove();
-}
-FILES = {};
-empty.classList.remove("hidden");
-gallery.append(empty);
-};
-
-</script>
-
-<style>
-.hasImage:hover section {
-background-color: rgba(5, 5, 5, 0.4);
-}
-.hasImage:hover button:hover {
-background: rgba(5, 5, 5, 0.45);
-}
-
-#overlay p,
-i {
-opacity: 0;
-}
-
-#overlay.draggedover {
-background-color: rgba(255, 255, 255, 0.7);
-}
-#overlay.draggedover p,
-#overlay.draggedover i {
-opacity: 1;
-}
-
-.group:hover .group-hover\:text-blue-800 {
-color: #2b6cb0;
-}
-</style>
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="rounded">
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 dark:text-gray-100 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 dark:text-gray-100 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800 dark:text-gray-100">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 dark:bg-gray-100 dark:text-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between bg-pink-300 rounded-lg border border-pink-300 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-pink-300   focus:ring-black"
+                      aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between items-start bg-blue-300 rounded-lg border border-blue-300 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 text-sm">Probabo, inquit, sic agam, ut labore et voluptatem sequi nesciunt, neque porro quisquam est, quid malum, sensu iudicari</p>
+              </div>
+              <div class="w-full flex flex-col items-start">
+                  <div class="mb-3 border border-gray-800 rounded-full px-3 py-1 text-gray-800 text-xs flex items-center" aria-label="Due on" role="contentinfo">
+                       <svg   xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="12" cy="13" r="7"></circle>
+                          <polyline points="12 10 12 13 14 13"></polyline>
+                          <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                          <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                      </svg>
+                      <p class="ml-2">7 Sept, 23:00</p>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800 w-full">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-blue-300  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="rounded">
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 dark:text-gray-100 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="dark:text-gray-100 text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full dark:bg-gray-100 dark:text-gray-800 bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 dark:text-gray-100 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="mb-3 flex items-center">
+                      <div class="border border-gray-300 dark:border-gray-700 rounded-full px-3 py-1 dark:text-gray-400 text-gray-600 text-xs flex items-center" aria-label="due on" role="contentinfo">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <circle cx="12" cy="13" r="7"></circle>
+                              <polyline points="12 10 12 13 14 13"></polyline>
+                              <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                              <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                          </svg>
+                          <p class="ml-2 dark:text-gray-400">7 Sept, 23:00</p>
+                      </div>
+                      <button class="p-1 bg-gray-800 dark:bg-gray-100 rounded-full ml-2 text-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="save in starred items" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z"></path>
+                          </svg>
+                      </button>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="dark:text-gray-100 text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full dark:bg-gray-100 dark:text-gray-800 bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 dark:text-gray-100 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="mb-3 flex items-center flex-no-wrap">
+                      <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                      <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                      <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="dark:text-gray-100 text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full dark:bg-gray-100 dark:text-gray-800 bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="rounded">
+          <div class="w-full h-64 flex flex-col justify-between items-start dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 dark:text-gray-100 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 dark:text-gray-100 text-sm">Probabo, inquit, sic agam, ut labore et voluptatem sequi nesciunt, neque porro quisquam est, quid malum, sensu iudicari</p>
+              </div>
+              <div class="w-full flex flex-col items-start">
+                  <div aria-label="time" role="contentinfo" class="mb-3 border border-gray-800 rounded-full px-3 py-1 text-gray-800 dark:text-gray-400 dark:border-gray-700 text-xs flex items-center">
+                      <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z"></path>
+                          <circle cx="12" cy="13" r="7"></circle>
+                          <polyline points="12 10 12 13 14 13"></polyline>
+                          <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                          <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                      </svg>
+                      <p class="ml-2">7 Sept, 23:00</p>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800 dark:text-gray-100 w-full">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 dark:text-gray-800 dark:bg-gray-100 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between bg-gray-300 dark:bg-gray-700 dark:border-gray-700 rounded-lg border border-gray-300 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 dark:text-gray-100 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 dark:text-gray-100 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800 dark:text-gray-100">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white dark:bg-gray-100 dark:text-gray-800 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-gray-300  focus:ring-black"  aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between bg-yellow-400 rounded-lg border border-yellow-400 mb-6 py-5 px-4">
+              <div>
+                  <h4 class="text-gray-800 font-bold mb-3">13 things to work on</h4>
+                  <p class="text-gray-800 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-yellow-400  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="rounded">
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 dark:text-gray-100 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="mb-3 flex items-center">
+                      <button class="p-1 bg-gray-800 dark:bg-gray-100 rounded-full text-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="save in starred messages" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M12 17.75l-6.172 3.245 1.179-6.873-4.993-4.867 6.9-1.002L12 2l3.086 6.253 6.9 1.002-4.993 4.867 1.179 6.873z"></path>
+                          </svg>
+                      </button>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800 dark:text-gray-100">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white dark:bg-gray-100 dark:text-gray-800 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between dark:bg-gray-800 bg-white dark:border-gray-700 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 dark:text-gray-100 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="mb-3 flex items-center flex-no-wrap">
+                      <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                      <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                      <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                          <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                      </div>
+                  </div>
+                  <div class="flex items-center justify-between text-gray-800 dark:text-gray-100">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white dark:bg-gray-100 dark:text-gray-800 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full h-64 flex flex-col justify-between bg-red-300 rounded-lg border border-red-300 mb-6 py-5 px-4">
+              <div>
+                  <h3 class="text-gray-800 leading-7 font-semibold w-11/12">What does success as a UX designer look like and how to get there systematically</h3>
+              </div>
+              <div>
+                  <div class="flex items-center justify-between text-gray-800">
+                      <p class="text-sm">March 28, 2020</p>
+                      <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-red-300 focus:ring-black" aria-label="edit note" role="button">
+                          <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pencil" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z"></path>
+                              <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4"></path>
+                              <line x1="13.5" y1="6.5" x2="17.5" y2="10.5"></line>
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
