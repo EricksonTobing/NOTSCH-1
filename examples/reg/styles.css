@@ -9,15 +9,6 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: rgba(247, 232, 166, 0.781);
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
-}
-
 
 
 form {
@@ -38,13 +29,7 @@ select {
     box-sizing: border-box;
 }
 
-input[type="radio"] {
-    margin-right: 5px;
-}
 
-#kelasOptions {
-    margin-top: 10px;
-}
 
 input[type="submit"] {
     background-color: #4caf50;

@@ -1,14 +1,11 @@
 <?php
-$servername = "localhost"; 
-$username = "notsch55"; 
-$password = "notsch5"; 
-$database = "notsch"; 
+$servername = "localhost";
+$username = "notsch55";
+$password = ""; // Gantilah dengan kata sandi yang benar
+$database = "notsch";
 
-// Buat koneksi
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
-// Periksa koneksi
-if ($conn->connect_error) {
-    die("Koneksi database gagal: " . $conn->connect_error);
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
-?>
